@@ -1,0 +1,366 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+  margin: auto;
+	max-width: 1100px;
+}
+
+header h1 {
+	text-align: center;
+	padding: 20px;
+}
+
+.container-header {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+nav {
+	overflow: hidden;
+	background-color: #5c9f2d;
+}
+
+.row {
+	width: 100%;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container {
+	display: flex;
+}
+
+aside {
+	flex: 35%;
+	padding-right: 20px;
+}
+
+main {
+	flex: 65%;
+	background-color: white;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+
+
+footer {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	background-color: #5c9f2d;
+	color: white;
+}
+
+/* Specifika styles */
+
+.container-header h1 {
+	margin-left: 25px;
+}
+
+nav a {
+	float: left;
+	font-size: 1.6em;	
+	font-weight: bold;
+	padding: 14px 20px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav a:link {
+	
+}
+
+nav a:visited {
+	
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+	background-color: #6AB734;
+}
+
+nav a:active {
+	
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+	font-weight: bold;
+	color: white;
+  border: none;
+	border-radius: 0px;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #1B3409;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+ul {
+  list-style-type: none;
+	width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+aside a {
+	display: block;
+	margin-bottom: 10px;
+  text-decoration: none;
+	color: #1B3409;
+}
+
+.content {
+	max-width:665px;
+}
+
+.content img {
+	max-width: 100%;
+	height: auto;
+}
+
+.image-text {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.preamble {
+	font-weight: bold;
+}
+
+.link-list {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	background-color: #EBF7E3;
+}
+
+.link-list h3 {
+	color: #1B3409;
+	margin-bottom: 10px;
+}
+
+.link-list a {
+	font-size: 1.4em;
+}
+
+.link-list a:link {
+	
+}
+
+.link-list a:visited {
+	
+}
+
+.link-list a:hover {
+	font-weight: bold;
+}
+
+.link-list a:active {
+	
+}
+
+p a {
+	text-decoration: none;
+	color: #0174DF;
+}
+
+p a:link {
+	
+}
+
+p a:visited {
+	
+}
+
+p a:hover {
+	font-weight: bold;
+}
+
+p a:active {
+	
+}
+
+.footer-content {
+	flex: 40%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+/* Headers & paragraphs */
+
+h1 {
+	font-size: 4.0em;
+}
+
+h2 {
+	font-size: 3.0em;
+	font-weight: normal;
+	margin-top: 10px;
+	margin-bottom: 8px;
+}
+
+h3 {
+	font-size: 2.1em;
+	font-weight: normal;
+	margin: 0;
+	margin-top: 25px;
+}
+
+h4 {
+	font-size: 1.8em;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 1.4em;
+	line-height: 1.5;
+	text-align: left;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+/* Design for flip card */
+
+.flip-card {
+	float: left;
+	width: 33%;
+  background-color: transparent;
+  height: 250px;
+  perspective: 1000px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+	text-align: center;
+	padding: 10px;
+}
+
+.flip-card-front p {
+	font-size: 1.5em;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.flip-card-back p {
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*Design for quiz-kopia*/
+.question{
+	border-top: 1px solid #eee;
+	padding-top: 20px;
+	margin-bottom: 8px;
+}
+
+.answers {
+	padding-bottom: 20px;
+}
+
+.answers label {
+	display: block;
+	margin-top: 5px;
+}
+
+button {
+	border: none;
+  padding: 8px 16px;  
+	margin-top: 5px;
+	margin-bottom: 15px;
+  text-decoration: none; 
+	background-color: #6AB734;
+  color: white;
+	font-weight: bold;
+  cursor: pointer;
+}
+
+#quiz {
+	font-size: 1.4em;
+	margin-top: 30px;
+}
+
+#results {
+	font-size: 1.4em;
+}

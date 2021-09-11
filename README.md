@@ -1,1 +1,1 @@
-# university_recycling
+Project for a university course that had recycling as a required topic and focus on infotainment. The project had som be created using HTML and CSS, include a few webpages, some sort of sound effect (hence the sound on link clicks) and animation. There was no requirement to use JavaScript but i felt it needed some sort of quiz in order to make it more like an infotainment site. The code behind the quiz was from a tutorial and made with no prior experience. 

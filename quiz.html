@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang ="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+<title>Quiz - Tekinge kommun</title>
+<script>
+  var bleep = new Audio();
+  bleep.src = 'ljud/mouseclick.mp3';
+</script>
+<style>
+/* Här kan du skriva din interna CSS-kod */
+header {
+  font-family: 'Aclonica';
+}
+
+
+
+/* Behåll denna kod, den förhindrar att din egen kod hamnar under W3C logos nedan */
+.clearfix {
+clear:both;
+}
+</style>
+</head>
+<body>
+<div id="page-content">
+<header>
+<div class="container-header">
+  <div class="logo-holder">
+    <img src="bilder/recycle-logo.png" alt="Logotyp för kommunen" width="167" height="178" >
+  </div>
+	<div class="header-text">
+	  <h1>Tekinge kommun - källsortera mera</h1>
+	</div>
+</div>
+</header>
+
+<nav>
+<div class="container">
+  <a href="index.html" onmousedown="bleep.play()">Hem</a>
+  <div class="dropdown">
+      <button class="dropbtn">Så sorterar du
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="plast.html" onmousedown="bleep.play()">Plast</a>
+        <a href="papper.html" onmousedown="bleep.play()">Papper</a>
+        <a href="glas.html" onmousedown="bleep.play()">Glas</a>
+				<a href="metall.html" onmousedown="bleep.play()">Metall</a>
+				<a href="tidningar.html" onmousedown="bleep.play()">Tidningar</a>
+      </div>
+	</div>
+<a href="quiz.html" onmousedown="bleep.play()">Källsorteringsquiz</a>
+</div>
+</nav>
+
+<div class="row">
+
+<main>
+
+  <div class="content">
+    <div class="image-top">
+      <img src="bilder/quiz-bild.jpg" alt="Bild på frågetecken" width="665" height="333">
+    </div>
+
+    <h2>Testa dina kunskaper i vår källsorteringsquiz</h2>
+
+    <p class="preamble">Är du en sån som älskar att skrika ut svaret på frågor? Gillar du att briljera med din kunskap inom allting?
+		Här har du en quiz där du kan testa dina kunskaper inom källsortering. Har du inte superkoll på området? Oroa dig inte. Alla svar 
+		kan du hitta på denna webbplats och du kan återkomma till quizzet när som helst.</p>
+	
+    <div class="quiz-content">
+      <div id="quiz"></div>
+      <button id="submit">Get Results</button>
+      <div id="results"></div>
+    </div>
+  </div>
+</main>
+
+<aside id="right-side">
+<div class="link-list">
+<h3>Läs mer om källsortering</h3>
+<ul>
+	<li><a href="https://www.sopor.nu/" target="_blank" onmousedown="bleep.play()">
+	  sopor.nu - Sveriges avfallsportal</a></li>
+	<li><a href="https://www.hemhyra.se/tips-rad/sa-har-ska-du-sortera-dina-sopor/" target="_blank" onmousedown="bleep.play()">
+	  Hem & hyra - så sopsorterar man</a></li>
+	<li><a href="https://vmab.se/sopsortering" target="_blank" onmousedown="bleep.play()">
+	  Vmab - sopsorteringsguiden</a></li>
+</ul>
+</div>
+</aside>
+</div>
+
+<footer>
+<div class="footer-content">
+<h4>Tekinge kommun vill tacka dig</h4>
+<p>Vi vill redan nu tacka dig för att du hjälper till att bidra till en bättre värld. Även om din insats kan verka liten så gör den verkligen
+skillnad. Du är en förebild för alla i kommunen, stora som små. Du är en riktig källsorteringshjälte, men även en hjälte kan ibland känna sig förvirrad. Då kan 
+du kontakta oss på Tekinge kommun. Vi hjälper dig.</p>
+</div>
+<div class="footer-content">
+<h4>Kontakta oss</h4>
+<p>Telefonnummer: 012-345 678</p>
+<p>e-post: kundtjanst@tekinge-kommun.se</p>
+</div>
+</footer>
+
+<!-- W3C logos - Behåll denna kod som ger dig snabbknappar till validering av både din HTML- och CSS-kod -->
+<div class="clearfix"></div>
+<div>
+<p></p>
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img
+src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png"
+alt="Valid HTML5" height="50" width="50"
+style="border:0;" /></a>
+</p>
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+<img style="border:0;width:88px;height:31px"
+src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+alt="Valid CSS!" />
+</a>
+</p>
+</div>
+</div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
